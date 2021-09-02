@@ -1,0 +1,44 @@
+.client {
+  display: flex;
+  justify-content: center;
+}
+.client__list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.client__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition-property: border-color;
+
+  &:hover,
+  &:focus {
+    border-color: var(--secondary-color);
+    cursor: pointer;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.client__icon-logo {
+  fill: #afb1b8;
+  transition-property: fill;
+}
+
+.client__card:hover > .client__icon-logo,
+.client__card:focus > .client__icon-logo {
+  fill: var(--secondary-color);
+  cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.client__title {
+  margin: 0 0 50px 0;
+}

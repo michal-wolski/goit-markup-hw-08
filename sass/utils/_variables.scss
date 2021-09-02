@@ -1,0 +1,18 @@
+$fonts: (
+  "main-font": "Roboto",
+  "Open Sans",
+  sans-serif,
+  "secondary-font": "Raleway",
+  sans-serif;,
+);
+$colors: (
+  "primary": #212121,
+  "secondary": #2196f3,
+  "third-rate": #757575,
+  "quaternary": #f5f4fa,
+  "background": #ffffff,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}

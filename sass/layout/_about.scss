@@ -1,0 +1,22 @@
+.about-us__icon-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 100px 25px 100px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+.about-us__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.about-us__title {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.about-us__text {
+  font-size: 14px;
+  color: var(--additional-color);
+}

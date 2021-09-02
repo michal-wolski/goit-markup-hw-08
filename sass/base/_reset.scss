@@ -1,0 +1,62 @@
+body {
+  background: #ffffff;
+  color: #212121;
+  font-family: "Roboto", "Raleway", sans-serif;
+}
+:root {
+  --main-font: "Roboto", "Open Sans", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --main-color: #212121;
+  --secondary-color: #2196f3;
+  --third-color: #ffffff;
+  --additional-color: #757575;
+  --bgbutton-portfolio: #f5f4fa;
+}
+h1 h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  font-size: 18px;
+  line-height: 2;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.87;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+}
+button {
+  cursor: pointer;
+  border: 0px;
+}
+.list {
+  list-style: none;
+}
+
+a {
+  list-style-type: none;
+  text-decoration: none;
+  transition-property: color;
+}
+a:hover,
+a:focus {
+  color: var(--secondary-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
