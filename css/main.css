@@ -82,9 +82,29 @@ a:focus {
 }
 
 .container {
-  width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  align-items: center;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+    padding: 0px 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0px 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding: 0px 15px;
+  }
 }
 
 .section {
@@ -406,12 +426,49 @@ a:focus {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background.jpg);
 }
 
+@media screen and (max-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/mobile/hero-bg-mobile480x400@1x.jpg");
+    text-align: center;
+    padding: 118px 15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/tablet/hero-bg-tablet768x400@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 118px 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background.jpg);
+  }
+}
+
 .hero__title {
+  max-width: 696px;
   font-weight: 900;
   font-size: 44px;
   text-align: center;
   letter-spacing: 0.06em;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero__title {
+    max-width: 365px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    margin: 0;
+    padding-bottom: 30px;
+  }
 }
 
 .hero__button {
@@ -439,7 +496,23 @@ a:focus {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 60px;
   gap: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .about-us__list {
+    display: block;
+    padding-top: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .about-us__list {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+  }
 }
 
 .about-us__title {

@@ -10,7 +10,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 60px;
   gap: 30px;
+}
+@media screen and (max-width: 768px) {
+  .about-us__list {
+    display: block;
+    padding-top: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .about-us__list {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  }
 }
 .about-us__title {
   padding-top: 30px;

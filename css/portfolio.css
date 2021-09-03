@@ -82,9 +82,29 @@ a:focus {
 }
 
 .container {
-  width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  align-items: center;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+    padding: 0px 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0px 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding: 0px 15px;
+  }
 }
 
 .section {
