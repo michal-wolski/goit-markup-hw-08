@@ -1,11 +1,15 @@
 .work {
   margin-top: 94px;
-}
-@media screen and (max-width: 768px) {
-  .work {
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: none;
   }
 }
+
 .work__title {
   margin-top: 90px;
   margin-bottom: 50px;
