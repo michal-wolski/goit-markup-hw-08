@@ -56,7 +56,12 @@
                 <ul class="portfolio list">
                     <li class="portfolio__item">
                         <div class="portfolio__img">
-                            <img src="./images/img1.jpg" alt="Laptop" width="370" height="294">
+                            <picture>
+                                <source srcset="./images/desktop/team1@1x.jpg 1x, ./images/desktop/team1@2x.jpg 2x" media="(min-width:1200px)">
+                                <source srcset="./images/tablet/img.jpg 1x, ./images/tablet/img2x.jpg 2x" media="(min-width:768px)">
+                                <img src="./images/mobile/img.jpg" srcset="./images/mobile/img@2x.jpg 2x"
+                                    alt="smiling man in glasses, with a short beard, and in a maroon buttoned shirt" />
+                            </picture>
                             <div class="portfolio__overlay">
                                 <p>Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
                                     koronawirusa. Firmy wykorzystują tę platformę

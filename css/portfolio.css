@@ -239,13 +239,9 @@ a:focus {
 
 .filters {
   display: flex;
-  justify-content: center;
-  margin-bottom: 34px;
-  gap: 9px;
-}
-
-.filters:active {
-  color: #2196f3;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 40px;
 }
 
 .filters__button {
@@ -255,7 +251,7 @@ a:focus {
   letter-spacing: 0.03em;
   background-color: var(--bgbutton-portfolio);
   border-radius: 4px;
-  padding: 6px 22px 6px 22px;
+  padding: 6px 35px;
   transition-property: background-color, color, box-shadow;
 }
 
