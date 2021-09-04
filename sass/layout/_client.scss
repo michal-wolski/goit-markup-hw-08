@@ -1,17 +1,24 @@
+.client__title {
+  margin: 0 0 30px 0;
+}
 .client {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
 }
 .client__list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px){
+    justify-content: center;
+  }
 }
 .client__card {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
@@ -25,8 +32,11 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-}
 
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
+}
 .client__icon-logo {
   fill: #afb1b8;
   transition-property: fill;
@@ -39,6 +49,34 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.client__title {
-  margin: 0 0 50px 0;
-}
+
+// .client {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: center;
+// }
+// .client__list {
+//   display: flex;
+//   justify-content: center;
+//   gap: 30px;
+// }
+// .client__card {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 170px;
+//   height: 92px;
+//   border: 1px solid #afb1b8;
+//   box-sizing: border-box;
+//   border-radius: 4px;
+//   transition-property: border-color;
+
+//   &:hover,
+//   &:focus {
+//     border-color: var(--secondary-color);
+//     cursor: pointer;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//   }
+// }
+
