@@ -1,6 +1,11 @@
 .work {
   margin-top: 94px;
 }
+@media screen and (max-width: 768px) {
+  .work {
+    display: none;
+  }
+}
 .work__title {
   margin-top: 90px;
   margin-bottom: 50px;
@@ -10,6 +15,7 @@
   justify-content: center;
   gap: 30px;
 }
+
 .work__list-item {
   display: flex;
   position: relative;
