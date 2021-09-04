@@ -431,78 +431,65 @@ a:focus {
 }
 
 .hero {
-  color: #ffffff;
-  padding: 200px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/mobile/hero-bg-mobile480x400@1x.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 118px 15px;
+  color: #ffffff;
 }
 
-@media screen and (max-width: 768px) {
-  .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/mobile/hero-bg-mobile480x400@1x.jpg");
-    background-position: center top;
-    background-repeat: no-repeat;
-    text-align: center;
-    padding: 118px 15px;
-  }
-}
-
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 768px), screen and (min-resolution: 192dpi) and (max-width: 768px), screen and (min-resolution: 2dppx) and (max-width: 768px) {
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/mobile/hero-bg-mobile480x400@2x.jpg");
-    text-align: center;
-    padding: 118px 15px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/tablet/hero-bg-tablet768x400@1x.jpg");
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 118px 15px;
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px), screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px), screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/tablet/hero-bg-tablet768x400@2x.png");
-    background-position: center top;
-    background-repeat: no-repeat;
-    text-align: center;
-    padding: 118px 15px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/tablet/hero-bg-tablet768x400@2x.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/desktop/hero-bg-desktop.jpg);
+    padding: 200px 0;
+    background-size: cover;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/desktop/hero-bg-desktop@1x.jpg");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/desktop/hero-bg-desktop@1x.jpg");
   }
 }
 
 .hero__title {
-  max-width: 696px;
+  padding-bottom: 30px;
+  max-width: 365px;
   font-weight: 900;
-  font-size: 44px;
-  text-align: center;
+  font-size: 26px;
+  line-height: 42px;
   letter-spacing: 0.06em;
-  margin-bottom: 30px;
+  color: #ffffff;
+  margin: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1200px) {
   .hero__title {
-    max-width: 365px;
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 42px;
-    text-align: center;
-    letter-spacing: 0.06em;
-    margin: 0;
-    padding-bottom: 30px;
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 60px;
   }
 }
 
