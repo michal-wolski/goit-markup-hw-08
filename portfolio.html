@@ -16,20 +16,22 @@
 </head>
 
 <body>
-    <!-- <header class="header">
+    <header class="header">
         <div class="container--header container">
             <nav class="header__navigation">
                 <a class="logo logo--dark" href="./index.html"><span>Web</span>Studio</a>
+                <button type="button" class="menu__btn" aria-expanded="true" aria-controls="menu" data-menu-button>
+                </button>
                 <ul class="header__navigation-list list link">
-                    <li><a class="header__navigation--link" href="./index.html">Agencja</a></li>
+                    <li><a class="header__navigation--link " href="./index.html">Agencja</a></li>
                     <li><a class="header__navigation--link header__navigation--active"
                             href="./portfolio.html">Portfolio</a></li>
                     <li><a class="header__navigation--link" href="#">Kontakt</a></li>
                 </ul>
             </nav>
-            <ul class="header__navigation-list list">
-                <li class="header__navigation-"><a class="header__navigation-mail link"
-                        href="mailto:info@devstudio.com"><svg class="header__navigation-icon" width=20 height=16>
+            <ul class="header__contact-list list">
+                <li><a class="header__navigation-mail link" href="mailto:info@devstudio.com"><svg
+                            class="header__navigation-icon" width=20 height=16>
                             <use href="./images/icons.svg#icon-envelope"></use>
                         </svg>info@devstudio.com</a></li>
                 <li><a class="header__navigation-tel link" href="tel:+48111111111"><svg class="header__navigation-icon"
@@ -37,9 +39,39 @@
                             <use href="./images/icons.svg#icon-smartphone"></use>
                         </svg>+48 111 111 111</a></li>
             </ul>
-
         </div>
-    </header> -->
+        <div class="menu" data-menu>
+            <ul class="menu-navigation list">
+                <li class="menu-navigation__item">
+                    <a class="menu-navigation__link" href="./index.html">Agencja</a>
+                </li>
+                <li class="menu-navigation__item">
+                    <a class="menu-navigation__link" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li class="menu-navigation__item">
+                    <a class="menu-navigation__link" href="">Kontakt</a>
+                </li>
+            </ul>
+            <ul class="menu-contact list">
+                <li class="menu-contact__item">
+                <li class="menu-contact__item">
+                    <a class="menu-contact__phone" href="+48111111111">
+
+                        +48 111 111 111</a>
+                </li>
+                <a class="menu-contact__mail" href="mailto:info@devstudio.com">
+
+                    info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="menu-social list">
+                <li class="menu-social__link"><a href="Instagram">Instagram</a></li>
+                <li class="menu-social__link"><a href="Tweeter">Tweeter</a></li>
+                <li class="menu-social__link"><a href="Facebook">Facebook</a></li>
+                <li class="menu-social__link"><a href="Linkedin">Linkedin</a></li>
+            </ul>
+        </div>
+    </header>
     <main>
         <!-- PORTFOLIO -->
         <div class="section">
@@ -93,7 +125,7 @@
                             </div>
                         </div>
                         <div class="portfolio__description">
-                            <h2 class="portfolio__title">Grafika New Orlean vs Golden Star</h2>
+                            <h2 class="portfolio__title">Grafika New Orlean vs Golden</h2>
                             <p class="portfolio__text">Dizajn</p>
                         </div>
                         </img>
@@ -304,6 +336,7 @@
                 </div>
             </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
