@@ -1020,6 +1020,24 @@ a:focus {
   margin-bottom: 40px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .filters {
+    flex-wrap: unset;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filters {
+    justify-content: center;
+    margin-bottom: 34px;
+    gap: 9px;
+  }
+}
+
+.filters:active {
+  color: #2196f3;
+}
+
 .filters__button {
   font-weight: 500;
   font-size: 16px;
@@ -1027,8 +1045,14 @@ a:focus {
   letter-spacing: 0.03em;
   background-color: var(--bgbutton-portfolio);
   border-radius: 4px;
-  padding: 6px 35px;
+  padding: 6px 30px;
   transition-property: background-color, color, box-shadow;
+}
+
+@media screen and (min-width: 1200px) {
+  .filters__button {
+    padding: 6px 22px 6px 22px;
+  }
 }
 
 .filters__button:hover, .filters__button:focus {
@@ -1071,7 +1095,7 @@ a:focus {
   padding: 49px 45px 49px 24px;
   color: var(--third-color);
   font-size: 18px;
-  line-height: 1.555;
+  line-height: 28px;
   letter-spacing: 0.03em;
 }
 
