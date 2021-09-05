@@ -20,6 +20,8 @@
     <div class="container--header container">
       <nav class="header__navigation">
         <a class="logo logo--dark" href="./index.html"><span>Web</span>Studio</a>
+        <button type="button" class="menu__btn" aria-expanded="false" aria-controls="menu" data-menu-button>
+        </button>
         <ul class="header__navigation-list list link">
 
           <li><a class="header__navigation--link header__navigation--active " href="./index.html">Agencja</a></li>
@@ -36,6 +38,37 @@
               height=16>
               <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>+48 111 111 111</a></li>
+      </ul>
+    </div>
+    <div class="menu is-open" data-menu="">
+      <ul class="menu-navigation list">
+        <li class="menu-navigation__item">
+          <a class="menu-navigation__link" href="./index.html">Agencja</a>
+        </li>
+        <li class="menu-navigation__item">
+          <a class="menu-navigation__link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="menu-navigation__item">
+          <a class="menu-navigation__link" href="">Kontakt</a>
+        </li>
+      </ul>
+      <ul class="menu-contact list">
+        <li class="menu-contact__item">
+        <li class="menu-contact__item">
+          <a class="menu-contact__phone" href="+48111111111">
+
+            +48 111 111 111</a>
+        </li>
+        <a class="menu-contact__mail" href="mailto:info@devstudio.com">
+
+          info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="menu-social list">
+        <li class="menu-social__link"><a href="Instagram">Instagram</a></li>
+        <li class="menu-social__link"><a href="Tweeter">Tweeter</a></li>
+        <li class="menu-social__link"><a href="Facebook">Facebook</a></li>
+        <li class="menu-social__link"><a href="Linkedin">Linkedin</a></li>
       </ul>
     </div>
   </header>
@@ -370,6 +403,7 @@
       </form>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
     <!-- END MODAL -->
 </body>
 
