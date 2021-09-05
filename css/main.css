@@ -74,13 +74,6 @@ a {
   transition-property: color;
 }
 
-a:hover,
-a:focus {
-  color: var(--secondary-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .container {
   max-width: 100%;
   margin: 0 auto;
@@ -366,30 +359,95 @@ a:focus {
   border-bottom: 1px solid #ececec;
 }
 
-.container--header {
+.header__navigation {
   display: flex;
-  padding-top: 24px;
-  padding-bottom: 25px;
   align-items: center;
 }
 
 .logo--dark {
-  margin-right: 93px;
+  display: inline-block;
+  margin-right: 276px;
   color: var(--main-color);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .logo--dark {
+    margin-right: 83px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo--dark {
+    margin-right: 93px;
+  }
 }
 
 .logo--dark > span {
   color: var(--secondary-color);
 }
 
-.header__navigation {
+.header__navigation-list {
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header__navigation-list {
+    display: flex;
+    gap: 60px;
+    margin-right: 101px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__navigation-list {
+    display: flex;
+    gap: 46px;
+    margin-right: 345px;
+  }
+}
+
+.header__contact-list {
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header__contact-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__contact-list {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+.container--header {
   display: flex;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 276px;
   align-items: center;
 }
 
-.header__navigation-list {
-  display: flex;
-  gap: 46px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container--header {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container--header {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    padding-right: 0;
+    align-items: center;
+  }
 }
 
 .header__navigation--link {
@@ -397,14 +455,36 @@ a:focus {
   color: var(--main-color);
   font-weight: 500;
   font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  transition-property: color;
+}
+
+.header__navigation--link:hover {
+  color: var(--secondary-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__navigation-icon {
   fill: #757575;
-  margin-right: 10px;
+  margin-right: 8px;
   align-content: center;
   vertical-align: bottom;
   transition-property: fill;
+}
+
+@media screen and (min-width: 1200px) {
+  .header__navigation-icon {
+    margin-right: 10px;
+  }
+}
+
+.header__navigation-icon:hover {
+  fill: var(--secondary-color);
+  color: var(--secondary-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__navigation--active {
@@ -423,11 +503,7 @@ a:focus {
   background-color: var(--secondary-color);
 }
 
-.header__navigation-list {
-  margin-left: auto;
-}
-
-.header__navigation-item:hover {
+.header__contack-list:hover {
   fill: var(--secondary-color);
   color: var(--secondary-color);
   transition-duration: 250ms;
@@ -437,18 +513,37 @@ a:focus {
 .header__navigation-mail {
   color: #757575;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.02em;
 }
 
+@media screen and (min-width: 1200px) {
+  .header__navigation-mail {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.header__navigation-mail:hover {
+  color: var(--secondary-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .header__navigation-tel {
-  margin-left: 50px;
   color: #757575;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.02em;
+}
+
+@media screen and (min-width: 1200px) {
+  .header__navigation-tel {
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
 
 .header__navigation-tel:hover {
@@ -464,6 +559,7 @@ a:focus {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/mobile/hero-bg-mobile480x400@1x.jpg");
   background-position: center top;
   background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
   padding: 118px 15px;
   color: #ffffff;

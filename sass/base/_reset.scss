@@ -54,9 +54,9 @@ a {
   text-decoration: none;
   transition-property: color;
 }
-a:hover,
-a:focus {
-  color: var(--secondary-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+// a:hover,
+// a:focus {
+//   color: var(--secondary-color);
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// }
