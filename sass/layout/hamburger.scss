@@ -13,8 +13,8 @@
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .is-open {
-    display: block;
-  }
+  display: block;
+}
 .menu-navigation {
   display: flex;
   flex-direction: column;
@@ -33,24 +33,24 @@
   }
 }
 .menu__btn {
-    width: 40px;
-    height: 40px;
-    border: none;
-    display: flex;
-    background-color: white;
-    background-image: url(/images/menu_open.png);
+  width: 40px;
+  height: 40px;
+  border: none;
+  display: flex;
+  background-color: white;
+  background-image: url("/images/menu_open.png");
 
-    @media screen and (min-width: 768px) {
-      display: none;
-    }
-
-    &:hover,
-    &:focus {
-      fill: getColor(decorative-primary);
-      color: getColor(decorative-primary);
-      background-color: getColor(bg-additional);
-    }
+  @media screen and (min-width: 768px) {
+    display: none;
   }
+
+  &:hover,
+  &:focus {
+    fill: getColor(decorative-primary);
+    color: getColor(decorative-primary);
+    background-color: getColor(bg-additional);
+  }
+}
 .menu-contact {
   margin-bottom: 64px;
   font-weight: 500;
