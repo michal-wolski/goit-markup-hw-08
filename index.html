@@ -19,14 +19,14 @@
     <div class="container--header container">
       <nav class="header__navigation">
         <a class="logo logo--dark" href="./index.html"><span>Web</span>Studio</a>
-        <button type="button" class="menu__btn" aria-expanded="true" aria-controls="menu" data-menu-button>
-        </button>
         <ul class="header__navigation-list list link">
           <li><a class="header__navigation--link header__navigation--active " href="./index.html">Agencja</a></li>
           <li><a class="header__navigation--link" href="./portfolio.html">Portfolio</a></li>
           <li><a class="header__navigation--link" href="#">Kontakt</a></li>
         </ul>
       </nav>
+      <button type="button" class="menu__btn" aria-expanded="true" aria-controls="menu" data-menu-button>
+      </button>
       <ul class="header__contact-list list">
         <li><a class="header__navigation-mail link" href="mailto:info@devstudio.com"><svg
               class="header__navigation-icon" width=20 height=16>
@@ -311,8 +311,8 @@
     </section>
     <!-- END OUR CLIENTS-->
   </main>
-  <footer class="footer">
-    <div class="container">
+  <footer class="container--footer container">
+    <div class="footer">
       <div class="footer__staff">
         <div>
           <a class="logo logo--light" href="./index.html"><span>Web</span>Studio</a>
@@ -341,9 +341,8 @@
                 </svg></a></li>
           </ul>
         </div>
-        <div class="footer__newsletter">
-          <h3 class="h3-title footer__newsletter-title">Zapisz się do newslettera</h3>
           <div class="footer__newsletter-form">
+            <h3 class="h3-title footer__newsletter-title">Zapisz się do newslettera</h3>
             <form>
               <label><input class="footer__newsletter-input" type="email" name="user_mail" placeholder="E-mail"></label>
             </form>
@@ -352,7 +351,6 @@
                 <use href="./images/icons.svg#icon-send"></use>
               </svg></button>
           </div>
-        </div>
       </div>
   </footer>
   <!-- MODAL -->

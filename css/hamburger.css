@@ -37,7 +37,7 @@
   width: 40px;
   height: 40px;
   border: none;
-  display: flex;
+  display: block;
   background-color: white;
   background-image: url("../images/menu_open.png");
 }
