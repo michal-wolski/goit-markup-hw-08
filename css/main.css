@@ -724,6 +724,8 @@ a {
 
 .team {
   background-color: #f5f4fa;
+  width: 100%;
+  min-width: 480px;
 }
 
 .team__title {
@@ -741,6 +743,11 @@ a {
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team__card--pic {
+  width: 100px;
+  height: auto;
 }
 
 .team__name {
@@ -1249,7 +1256,7 @@ a {
   border: none;
   display: flex;
   background-color: white;
-  background-image: url(/images/menu_open.png);
+  background-image: url("../images/menu_open.png");
 }
 
 @media screen and (min-width: 768px) {

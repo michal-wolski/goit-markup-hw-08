@@ -717,7 +717,7 @@ a {
   border: none;
   display: flex;
   background-color: white;
-  background-image: url(/images/menu_open.png);
+  background-image: url("../images/menu_open.png");
 }
 
 @media screen and (min-width: 768px) {
