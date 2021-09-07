@@ -1,11 +1,17 @@
 .container--footer {
   padding: 0;
   max-width: none;
-}
-.footer {
-  text-decoration: none;
+    text-decoration: none;
   background-color: #2f303a;
   padding-top: 60px;
+}
+.footer {
+ @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-right: 215px;
+    margin-left: 215px;
+    justify-content: center;
+  }
 }
 
 .logo--light {
@@ -19,8 +25,11 @@
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: center;
+    gap: 144px;
+    // display: flex;
+    // justify-content: space-around;
+    // flex-wrap: wrap;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -35,6 +44,10 @@
   gap: 8px;
   margin-bottom: 60px;
   padding-top: 20px;
+
+  @media screen and (min-width: 1200px) {
+    min-width: 246px;
+  }
 }
 .footer__address--street {
   color: #ffffff;
@@ -96,6 +109,10 @@
   color: #ffffff;
   margin-bottom: 20px;
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 5px;
+  }
+
   @media screen and (min-width: 1200px) {
     margin-bottom: 0;
   }
@@ -129,6 +146,8 @@
 
   @media screen and (min-width: 1200px) {
     text-align: start;
+    display: block;
+    margin-bottom: 20px;
   }
 }
 .footer__newsletter-form {
@@ -136,15 +155,21 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  // flex-wrap: wrap;
-  // justify-content: center;
-  // gap: 20px;
 
   @media screen and (min-width: 1200px) {
-    flex-wrap: unset;
-    justify-content: start;
-    justify-content: none;
+   display: block;
   }
+}
+.footer__newsletter-form--desktop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  @media screen and (min-width: 1200px) {
+    flex-direction: unset;
+    justify-content: center;
+  }
+ 
 }
 .footer__newsletter-input {
   width: 100%;
@@ -164,7 +189,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    width: 358px;
+    min-width: 358px;
   }
 }
 
@@ -185,10 +210,10 @@
   letter-spacing: 0.06em;
   color: var(--third-color);
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 200px;
-    height: 50px;
-    padding: 0;
+  @media screen and (min-width: 1200px) {
+   margin-bottom: 0;
+   height: 50px;
+   width: 201px;
   }
 }
 .footer__newsletter-icon {

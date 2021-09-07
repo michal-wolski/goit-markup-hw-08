@@ -452,12 +452,18 @@ a {
 .container--footer {
   padding: 0;
   max-width: none;
-}
-
-.footer {
   text-decoration: none;
   background-color: #2f303a;
   padding-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    display: flex;
+    margin-right: 215px;
+    margin-left: 215px;
+    justify-content: center;
+  }
 }
 
 .logo--light {
@@ -475,8 +481,8 @@ a {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__staff {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: center;
+    gap: 144px;
   }
 }
 
@@ -495,6 +501,12 @@ a {
   gap: 8px;
   margin-bottom: 60px;
   padding-top: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__address {
+    min-width: 246px;
+  }
 }
 
 .footer__address--street {
@@ -562,6 +574,12 @@ a {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__social-title {
+    padding-top: 5px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer__social-title {
     margin-bottom: 0;
@@ -599,6 +617,8 @@ a {
 @media screen and (min-width: 1200px) {
   .footer__newsletter-title {
     text-align: start;
+    display: block;
+    margin-bottom: 20px;
   }
 }
 
@@ -611,9 +631,21 @@ a {
 
 @media screen and (min-width: 1200px) {
   .footer__newsletter-form {
-    flex-wrap: unset;
-    justify-content: start;
-    justify-content: none;
+    display: block;
+  }
+}
+
+.footer__newsletter-form--desktop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__newsletter-form--desktop {
+    flex-direction: unset;
+    justify-content: center;
   }
 }
 
@@ -639,7 +671,7 @@ a {
 
 @media screen and (min-width: 1200px) {
   .footer__newsletter-input {
-    width: 358px;
+    min-width: 358px;
   }
 }
 
@@ -661,11 +693,11 @@ a {
   color: var(--third-color);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .footer__newsletter-button {
-    width: 200px;
+    margin-bottom: 0;
     height: 50px;
-    padding: 0;
+    width: 201px;
   }
 }
 
