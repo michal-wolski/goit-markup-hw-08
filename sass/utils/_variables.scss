@@ -1,16 +1,14 @@
-$fonts: (
-  "main-font": "Roboto",
-  "Open Sans",
-  sans-serif,
-  "secondary-font": "Raleway",
-  sans-serif;,
-);
 $colors: (
-  "primary": #212121,
-  "secondary": #2196f3,
-  "third-rate": #757575,
-  "quaternary": #f5f4fa,
-  "background": #ffffff,
+  "header-primary": #212121,
+  "header-secondary": #ffffff,
+  "article-primary": #757575,
+  "article-secondary": #ffffff,
+  "bg-primary": #2f303a,
+  "bg-secondary": #f5f4fa,
+  "bg-additional": #ffffff,
+  "decorative-primary": #2196f3,
+  "decorative-secondary": #afb1b8,
+  "decorative-additional": #ffffff,
 );
 
 @function getColor($key) {
