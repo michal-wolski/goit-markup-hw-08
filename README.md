@@ -1,2 +1,2 @@
-# goit-markup-hw-08
- Zadanie domowe 8
+WebStudio 
+ Live Page https://michal-wolski.github.io/goit-markup-hw-08/
